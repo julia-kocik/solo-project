@@ -340,7 +340,39 @@ template {
   display: none;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Open Sans", Helvetica, Arial;
+  color: #b2bec3;
+}
+
+.main-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h3 {
+  font-size: 48px;
+  margin: 0 0 12px 0;
+}
+
+section {
+  padding: 24px 0;
+}
+
 /* Components */
 /* Sections */
+.title {
+  font-family: "Dancing Script", Helvetica, Arial;
+  color: black;
+}
+
 /* Pages / Views */
 /*# sourceMappingURL=style.css.map */

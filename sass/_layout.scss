@@ -1,0 +1,27 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: $font-size;
+    line-height: 1.7;
+    font-family: $main-font;
+    color: $color-gray;
+    
+}
+
+.main-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 48px;
+    margin: 0 0 12px 0;
+}
+
+section {
+    padding: 24px 0;    
+}
