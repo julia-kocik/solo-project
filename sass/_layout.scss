@@ -13,8 +13,10 @@ body {
 
 .main-container {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 h3 {
@@ -23,5 +25,6 @@ h3 {
 }
 
 section {
-    padding: 24px 0;    
+    padding: 24px 10px;   
 }
+

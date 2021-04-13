@@ -349,13 +349,17 @@ body {
   font-size: 16px;
   line-height: 1.7;
   font-family: "Open Sans", Helvetica, Arial;
-  color: #b2bec3;
+  color: #b3b3b3;
 }
 
 .main-container {
   max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0 20px 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
 h3 {
@@ -364,14 +368,81 @@ h3 {
 }
 
 section {
-  padding: 24px 0;
+  padding: 24px 10px;
 }
 
 /* Components */
 /* Sections */
-.title {
+.sidebar {
+  background-color: #1a1a1a;
+  width: 230px;
+  min-height: 100vh;
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.sidebar-title {
   font-family: "Dancing Script", Helvetica, Arial;
-  color: black;
+  color: #f2f2f2;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.sidebar-title h3 {
+  font-size: 28px;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0 0 20px 10px;
+}
+
+.links ul li {
+  padding: 8px 0;
+}
+
+.links ul li span {
+  padding-left: 20px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.links ul li a:hover {
+  color: #f2f2f2;
+}
+
+.manager .title h3 {
+  font-size: 18px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.manager .title h3::before {
+  position: absolute;
+  content: '';
+  top: -12px;
+  left: 50%;
+  width: 240px;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: #b3b3b3;
+}
+
+.manager .name h3 {
+  font-size: 16px;
+}
+
+.close-btn a i {
+  color: #b3b3b3;
+  padding: 12px 10px 0 0;
+  font-size: 24px;
+  visibility: hidden;
 }
 
 /* Pages / Views */
