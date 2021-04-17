@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-1 {
+    flex: 50% 0 0;
+    border: 1px solid $color-gray;
+    padding: 10px 20px;
+    background: white;
+}
+
+
+.header-2 {
+    flex: 50% 0 0;
+    border: 1px solid $color-gray;
+    padding: 30px 20px;
+    background: white;
+}
