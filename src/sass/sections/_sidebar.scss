@@ -1,10 +1,13 @@
 .sidebar {
     background-color: $color-black;
-    width: 230px;
     min-height: 100vh;
     flex: 1 0 0;
     display: flex;
     justify-content: space-between;
+}
+
+.container-fixed {
+    position: fixed;
 }
 
 
@@ -14,7 +17,7 @@
     text-align: left;
     padding-left: 16px;
     h3 {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
@@ -44,23 +47,26 @@
 }
 
 .manager .title h3::before {
-        position: absolute;
-        content: '';
-        top: -12px;
-        left: 50%;
-        width: 240px;
-        height: 1px;
-        transform: translateX(-50%);
-        background-color: $color-gray;
+    position: absolute;
+    content: '';
+    top: -12px;
+    left: 50%;
+    width: 206px;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: $color-gray;
 }
 
 .manager .name h3 {
     font-size: 16px;
 }
 
+.close-btn {
+    display: none;
+}
+
 .close-btn a i {
     color: $color-gray;
-    padding: 12px 10px 0 0;
+    padding: 12px 0 0 0;
     font-size: 24px;
-    visibility: hidden;
 }

@@ -6,6 +6,10 @@
 
 /* Components */
 @import "components/header";
+@import "components/title";
+@import "components/form-field";
+
+
 
 /* Sections */
 @import "sections/content";
@@ -14,4 +18,6 @@
 
 
 /* Pages / Views */
-//@import "pages/registration";
+@import "pages/general";
+@import "pages/details";
+@import "components/page";

@@ -1,0 +1,20 @@
+.date {
+    border-bottom: 1px solid $color-gray-light;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        background-color: $color-orange;
+        color: $color-white;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 5px;
+    }
+    input {
+        border: 1px solid $color-gray-light;
+        border-radius: 2px;
+        padding: 10px;
+    }
+    
+}

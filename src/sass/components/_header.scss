@@ -1,19 +1,42 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    font-size: 16px;
+    background-color: white;
+    top: 0; /* this is required for "sticky" to work */
+    position: sticky;
+    i {
+        padding: 4px;
+    }
+    span {
+        padding-left: 6px;
+    }
 }
 
-.header-1 {
+.header-box {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-lg {
     flex: 50% 0 0;
-    border: 1px solid $color-gray;
+    border: 1px solid $color-gray-light;
     padding: 10px 20px;
-    background: white;
+    
+}
+
+.header-md {
+    flex: 20% 0 0;
+    border: 1px solid $color-gray-light;
+   
+}
+
+.header-sm {
+    flex: 5% 0 0;
+    border: 1px solid $color-gray-light;
 }
 
 
-.header-2 {
-    flex: 50% 0 0;
-    border: 1px solid $color-gray;
-    padding: 30px 20px;
-    background: white;
-}
+
+
+
