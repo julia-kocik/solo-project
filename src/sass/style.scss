@@ -8,6 +8,8 @@
 @import "components/header";
 @import "components/title";
 @import "components/form-field";
+@import "components/button";
+@import "components/table";
 
 
 
@@ -20,4 +22,8 @@
 /* Pages / Views */
 @import "pages/general";
 @import "pages/details";
+@import "pages/links";
+@import "pages/personal-data";
+@import "pages/payouts";
+
 @import "components/page";
