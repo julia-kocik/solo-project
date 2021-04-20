@@ -1,6 +1,8 @@
 {
   const navLinks = document.querySelectorAll('.links ul li a');
   const pages = document.querySelectorAll('.page');
+  const hamburger = document.querySelector('.hamburger-btn a');
+  const sidebarContent = document.querySelector('.sidebar');
 
   const initPages = () => {
     const idFromHash = window.location.hash.replace('#', '');
@@ -38,9 +40,15 @@
     }
   };
 
+  const initSidebar = () => {
+    hamburger.addEventListener('click', () => {
+      sidebarContent.classList.toggle('sidebar-active');
+    });
+  };
 
   const app = () => {
     initPages();
+    initSidebar();
   };
 
   app();

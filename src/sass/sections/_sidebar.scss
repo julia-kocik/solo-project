@@ -1,14 +1,12 @@
 .sidebar {
     background-color: $color-black;
     min-height: 100vh;
-    flex: 1 0 0;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    width: 220px;
 }
 
-.container-fixed {
-    position: fixed;
-}
 
 
 .sidebar-title {
@@ -23,9 +21,12 @@
 
 .links ul {
     list-style-type: none;
-    padding: 0 0 20px 10px;
+    padding: 0 0 20px 0;
     li {
-        padding: 8px 0;
+        padding: 8px 12px;
+        &:hover {
+            border-left: 4px solid $color-orange;
+        }
     }
     li span {
         padding-left: 20px;
@@ -35,23 +36,23 @@
         color: $color-gray;
     }
     li a:hover {
-        color: $color-white
+        color: $color-white;
     }
 }
 
 
-.manager .title h3 {
+.manager h3 {
     font-size: 18px;
     padding-top: 10px;
     position: relative;
 }
 
-.manager .title h3::before {
+.manager h3::before {
     position: absolute;
     content: '';
     top: -12px;
     left: 50%;
-    width: 206px;
+    width: 150px;
     height: 1px;
     transform: translateX(-50%);
     background-color: $color-gray;
@@ -61,12 +62,40 @@
     font-size: 16px;
 }
 
-.close-btn {
+.manager h4 {
+    font-size: 16px;
+    padding-top: 10px;
+   
+}
+
+.hamburger-btn {
     display: none;
 }
 
-.close-btn a i {
+.hamburger-btn a i {
     color: $color-gray;
     padding: 12px 0 0 0;
     font-size: 24px;
+    
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        
+        padding-left: 10px;
+    }
+    .sidebar-content {
+        display: none;
+    }
+    .hamburger-btn {
+        display: flex;
+    }
+    .sidebar-active {
+        min-width: 220px;
+        .sidebar-content {
+            display: block;
+        }
+    }
+    
+    
 }
