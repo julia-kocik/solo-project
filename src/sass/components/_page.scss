@@ -28,10 +28,14 @@
     }
 }
 
-.page-hidden {
+.page {
     display: none;
 }
 
-.active {
+.page-active {
     display: flex;
+}
+
+.link-active {
+    color: $color-white !important;
 }
