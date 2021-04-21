@@ -95,6 +95,7 @@
   var ctx = document.getElementById('myChart').getContext('2d');
   // eslint-disable-next-line no-undef
   // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line no-undef
   var chart = new Chart(ctx, {
     // 1
     type: 'bar',
@@ -127,6 +128,12 @@
       }]
     },
   });
+
+  //flatpkr
+  // eslint-disable-next-line no-undef
+  flatpickr('#date-start', {});
+  // eslint-disable-next-line no-undef
+  flatpickr('#date-end', {});
   
 
   const app = () => {
