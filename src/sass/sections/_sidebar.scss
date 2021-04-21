@@ -79,9 +79,9 @@
     
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .sidebar {
-        
+        justify-content: flex-end;
         padding-left: 10px;
     }
     .sidebar-content {

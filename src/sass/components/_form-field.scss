@@ -18,3 +18,13 @@
     }
     
 }
+
+@media (max-width: 900px) {
+    .date {
+        flex-direction: column;
+        input {
+            margin-top: 8px;
+        }
+    }
+    
+}
