@@ -7,8 +7,6 @@
     width: 220px;
 }
 
-
-
 .sidebar-title {
     font-family: $fancy-font;
     color: $color-white;
@@ -52,7 +50,7 @@
     content: '';
     top: -12px;
     left: 50%;
-    width: 150px;
+    width: 268px;
     height: 1px;
     transform: translateX(-50%);
     background-color: $color-gray;
@@ -97,6 +95,8 @@
             display: block;
         }
     }
-    
+    .manager h3::before {
+        width: 242px;
+    }
     
 }

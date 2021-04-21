@@ -13,6 +13,19 @@
 </head>
 <body>
     <main class="main-container">
+        <!-- MODALE -->
+        <div class="overlay" id="overlay">
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                  <div class="btn-close js--close-modal">x</div>
+              
+                  <h4>Witaj w modalu!</h4>
+                  <p>Lorem ipsum dolor sit amet...</p>
+              
+                  <button class="js--close-modal">Okay</button>
+                </div>
+              </div>
+        </div>
         <!-- SIDEBAR -->
         <section class="sidebar">
             
@@ -118,6 +131,90 @@
                         <div class="chart-image">
                             <img src="./images/chart.png" alt="chart">
                         </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#">+ add new</a>
+                    </div>
+                    <div class="table-box table-links">
+                        <table>
+                             <tbody>
+                                <tr>
+                                    <td>Home Page</td>
+                                    <td><a href="#">http://www.homepage.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Currently offer</td>
+                                    <td><a href="#">http://www.currently.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Blurpix</td>
+                                    <td><a href="#">http://www.blurpix.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Your Site</td>
+                                    <td><a href="#">http://www.yoursite.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td><a href="#">http://www.google.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Facebook</td>
+                                    <td><a href="#">http://www.facebook.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dashboard</td>
+                                    <td><a href="#">http://www.dashboard.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Twitter</td>
+                                    <td><a href="#">http://www.twitter.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Piece of Wind</td>
+                                    <td><a href="#">http://www.pieceofwind.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                             </tbody>
+                         </table>
+                    </div>
+                    <div class="btn">
+                        <a href="#">+ add new</a>
                     </div>
                 </div>
             </div>
@@ -375,13 +472,13 @@
                     <form>
                         <div class="form-basic">
                             <label for="name">Name</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name"  required>
                             <label for="surname">Surname</label>
-                            <input type="text" name="surname" id="surname">
+                            <input type="text" name="surname" id="surname" required>
                             <label for="phone">Phone number</label>
-                            <input type="text" name="phone" id="phone">
+                            <input type="number" name="phone" id="phone" required>
                             <label for="email">E-mail</label>
-                            <input type="text" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-skype">
                             <label for="skype">Skype</label>
@@ -402,7 +499,7 @@
                             <input type="password" name="repeat" id="repeat">
                         </div>
                         <div class="btn">
-                            <a href="#">Save</a>
+                            <input type="submit" value="Save">
                         </div>
                     </form>
                 </div>
