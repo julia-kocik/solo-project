@@ -1,6 +1,15 @@
+.page-container {
+    height: auto;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
+
 .page-box {
-    height: 90%;
-    width: 95%;
+    height: 90%; 
+    width: 95% ;
     background-color: white;
 }
 

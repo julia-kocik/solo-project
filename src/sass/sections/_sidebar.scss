@@ -79,16 +79,17 @@
     
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
     .sidebar {
-        justify-content: flex-end;
+        justify-content: center;
         padding-left: 10px;
+        width: 40px;
     }
     .sidebar-content {
         display: none;
     }
     .hamburger-btn {
-        display: flex;
+        display: block;
     }
     .sidebar-active {
         min-width: 220px;

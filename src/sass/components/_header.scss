@@ -28,7 +28,6 @@
 .header-md {
     flex: 20% 0 0;
     border: 1px solid $color-gray-light;
-   
 }
 
 .header-sm {
@@ -36,12 +35,24 @@
     border: 1px solid $color-gray-light;
 }
 
-
-
-
-@media (max-width: 900px) {
-    .header {
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-lg {
         display: none;
     }
-    
+    .header-md {
+        flex: 30% 0 0;
+        border: 1px solid $color-gray-light;  
+    }
+    .header-sm {
+        flex: 20% 0 0;
+        border: 1px solid $color-gray-light;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .header {
+        display: none;
+    }   
 }
