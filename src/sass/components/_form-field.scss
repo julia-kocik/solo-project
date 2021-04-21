@@ -10,6 +10,9 @@
         padding: 10px;
         border-radius: 3px;
         margin: 5px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     input {
         border: 1px solid $color-gray-light;

@@ -56,14 +56,36 @@
     background-color: $color-gray;
 }
 
-.manager .name h3 {
-    font-size: 16px;
+.manager .name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    h3 {
+        font-size: 16px;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    span {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        border-radius: 50%;
+        left: 38px;
+        top: 16px;
+    }
 }
 
 .manager h4 {
     font-size: 16px;
     padding-top: 10px;
-   
+    padding-left: 10px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .hamburger-btn {
