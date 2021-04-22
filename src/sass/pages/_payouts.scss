@@ -6,3 +6,20 @@
     justify-content: center;
     align-items: center;
 } 
+
+.payouts-table-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid $color-gray-light;
+    padding: 20px 0;  
+    
+}
+
+.payouts-table-container {
+    th, td {
+        padding: 8px 72px;
+    }
+}
+
+

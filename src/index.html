@@ -51,8 +51,7 @@
                 </div>
         </div>
         <!-- SIDEBAR -->
-        <section class="sidebar sidebar-ind">
-            
+        <section class="sidebar sidebar-ind">            
                 <div class="sidebar-content">
                     <div class="sidebar-title">
                         <h3>Just do it</h3>
@@ -533,7 +532,64 @@
             <div class="page page-container" id="payout">
                 <div class="page-box">
                     <div class="title">
-                        <h3>PAYOUTS</h3>
+                        <h3>PAYOUT DATA HISTORY</h3>
+                    </div>
+                    <div class="date">
+                        <input type="text" name="date-start" id="date-start" placeholder="2021-04-21">
+                        <input type="text" name="date-end" id="date-end" placeholder="2021-04-22">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <div class="payouts-table-box">
+                        <div class="payouts-table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th> 
+                                        <th>Amount($)</th> 
+                                        <th>Deal</th>
+                                        <th>Acount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -542,6 +598,30 @@
                 <div class="page-box">
                     <div class="title">
                         <h3>POSTBACK</h3>
+                    </div>
+                    <div class="postback-p">
+                        <p>You can insert some parameters in this postback</p>
+                    </div>
+                    <div class="postback-form">
+                        <div class="postback-form-box">
+                            <label for="signup">Sign up</label>
+                            <textarea name="signup" id="signup" cols="30" rows="10"></textarea>
+                        </div>
+                        <div  class="postback-form-box">
+                            <label for="deposit">Deposit</label>
+                            <textarea name="deposit" id="deposit" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="postback-form-rest">
+                        <label for="postback-type">Postback type</label>
+                        <input type="text" id="postback-type" name="postback-type" placeholder="S2S(http://)">
+                        <label for="postback-countries">Select countries</label>
+                        <input type="select" id="postback-countrie" name="postback-countries">
+                        <label for="postback-sending">Sending options</label>
+                        <input type="select" id="postback-sending" name="postback-sending">
+                    </div>
+                    <div>
+                        <p class="postback-p">NOT send statuses</p>
                     </div>
                 </div>
             </div>
