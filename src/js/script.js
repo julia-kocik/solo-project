@@ -49,23 +49,30 @@
 
   //modals
   //close
+  const closeBtns = document.querySelectorAll('.overlay');
+  //console.log(closeBtns);
+
   const closeModal = () => {
-    document.getElementById('overlay').classList.remove('show');
+    for(let btn of closeBtns) {
+      btn.classList.remove('show');
+    }
   };
   
   const activateCloseModal = () => {
-    document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    document.querySelectorAll('.overlay .js--close-modal').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
         closeModal();
       });
     });
 
-    document.querySelector('#overlay').addEventListener('click', function(e) {
+    for(let btn of closeBtns) {
+   btn.addEventListener('click', function(e) {
       if(e.target === this) {
         closeModal();
       }
     });
+  }
 
     document.addEventListener('keyup', function(e) {
       if(e.keyCode === 27) {
@@ -74,15 +81,18 @@
     });
   };
 
+  console.log(document.querySelectorAll('.overlay .js--close-modal'));
+  
   const openModal = (modal) => {
     document.querySelectorAll('#overlay > *').forEach(function(modal) {
       modal.classList.remove('show');
     });
-    document.querySelectorAll(modal).forEach(function(modal) {
-      modal.classList.remove('show');
-    });
-    document.querySelector('#overlay').classList.add('show');
-    document.querySelector(modal).classList.add('modal-active');
+    if(modal == '#myModal') {
+      document.querySelector('#overlay').classList.add('show');
+    } else if(modal == '#quit') {
+      document.querySelector('#overlay-quit').classList.add('show');
+    }
+    document.querySelector(modal).classList.add('show');
   };
 
   const activateOpenModal = () => {
@@ -134,11 +144,13 @@
     },
   });
 
+  const initDatePicker = () => {
   //flatpkr
   // eslint-disable-next-line no-undef
-  flatpickr('#date-start', {});
-  // eslint-disable-next-line no-undef
-  flatpickr('#date-end', {});
+    flatpickr('#date-start', {});
+    // eslint-disable-next-line no-undef
+    flatpickr('#date-end', {});
+  };
   
 
   const app = () => {
@@ -146,6 +158,7 @@
     initSidebar();
     activateCloseModal();
     activateOpenModal();
+    initDatePicker();
   };
 
   app();

@@ -34,13 +34,16 @@
     display: none;
   }
 
-  .modal-active {
+  .modal.show {
     display: block;
   }
 
   .modal .btn-close {
     padding: 5px 15px;
     font-size: 22px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .modal-title {

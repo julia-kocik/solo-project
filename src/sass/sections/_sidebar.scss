@@ -7,11 +7,18 @@
     width: 220px;
 }
 
+.sidebar-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .sidebar-title {
     font-family: $fancy-font;
     color: $color-white;
     text-align: left;
     padding-left: 16px;
+    padding-top: 10px;
     h3 {
         font-size: 24px;
     }
@@ -104,9 +111,12 @@
         justify-content: center;
         padding-left: 10px;
         width: 40px;
+        
     }
+    
     .sidebar-content {
         display: none;
+        position: static;
     }
     .hamburger-btn {
         display: block;
