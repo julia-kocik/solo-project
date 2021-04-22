@@ -67,12 +67,12 @@
     });
 
     for(let btn of closeBtns) {
-   btn.addEventListener('click', function(e) {
-      if(e.target === this) {
-        closeModal();
-      }
-    });
-  }
+      btn.addEventListener('click', function(e) {
+        if(e.target === this) {
+          closeModal();
+        }
+      });
+    }
 
     document.addEventListener('keyup', function(e) {
       if(e.keyCode === 27) {
