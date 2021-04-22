@@ -37,3 +37,13 @@
         outline: none;
     }
 }
+
+@media (max-width: 991px) {
+    .postback-form {
+        flex-direction: column;
+    }
+    .postback-form-rest {
+        flex-direction: column;
+        height: 300px;
+    }
+}
