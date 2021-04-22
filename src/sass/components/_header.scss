@@ -33,6 +33,14 @@
 .header-sm {
     flex: 5% 0 0;
     border: 1px solid $color-gray-light;
+    &:hover {
+        cursor: pointer;
+        color: $color-orange;
+        i {
+            transform: scale(1.5);
+            transition: 1s all;
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

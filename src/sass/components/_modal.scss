@@ -27,20 +27,101 @@
 
   .modal {
     max-width: 600px;
+    width: 600px;
     margin: auto;
     background-color: #ffffff;
-    position: relative;
-    padding: 30px;
+    padding: 0 0 10px 0;
     display: none;
   }
 
-  .modal.show {
+  .modal-active {
     display: block;
   }
 
   .modal .btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    font-size: 22px;
   }
+
+  .modal-title {
+      border-bottom: 1px solid $color-gray-light;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      h3 {
+          font-size: 16px;
+          padding: 10px 20px;
+          margin: 0;
+      }
+  }
+
+  .modal-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid $color-gray-light;
+    padding: 10px;
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    .modal-name-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 16px;
+      span {
+          background-color: green;
+          border-radius: 3px;
+          color: white; 
+          text-align: center; 
+          font-size: 10px;
+      }
+      h4 {
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+}
+
+.modal-message-1 {
+  padding: 10px 10px 120px 10px;
+  border-bottom: 1px solid $color-gray-light;
+  span {
+    background-color: $color-gray-light;
+    color: $color-gray;
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+  }
+}
+
+.modal-message-box {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  input[type="text"] {
+    flex: 0 0 70%;
+    border: 1px solid $color-gray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    outline: none;
+  }
+  input[type="submit"] {
+    flex: 0 0 25%;
+    margin: 0 10px;
+    border: none;
+    background-color: $color-orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+

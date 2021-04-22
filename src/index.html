@@ -15,15 +15,42 @@
 <body>
     <main class="main-container">
         <!-- MODALE -->
+        <!-- MODAL MANAGER -->
         <div class="overlay" id="overlay">
             <div class="overlay" id="overlay">
                 <div class="modal" id="myModal">
-                  <div class="btn-close js--close-modal">x</div>
-              
-                  <h4>Witaj w modalu!</h4>
-                  <p>Lorem ipsum dolor sit amet...</p>
-              
-                  <button class="js--close-modal">Okay</button>
+                    <div class="modal-title">
+                        <h3>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h3>
+                        <div class="btn-close js--close-modal">x</div>
+                    </div>
+                    <div class="modal-name">
+                        <img src="./images/person_1.png" alt="Mikhael">
+                        <div class="modal-name-box">
+                            <h4>Mikhael E.</h4>
+                            <span>online</span>
+                        </div>
+                    </div>
+                    <div class="modal-message-1">
+                        <span>How can I help you?</span>
+                    </div>
+                    <div class="modal-message-box">
+                        <input type="text" required>
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+              </div>
+        </div>
+        <!-- MODAL QUIT -->
+        <div class="overlay" id="overlay">
+            <div class="overlay" id="overlay">
+                <div class="modal" id="quit">
+                    <div class="modal-title">
+                        <h3>Do you really want to quit?</h3>
+                    </div>
+                    <div class="btn cancel">
+                        <a href="#/general"> Cancel</a>
+                        <a href="#/general"> Quit</a>
+                    </div>
                 </div>
               </div>
         </div>
@@ -94,7 +121,7 @@
                         <i class="far fa-user"></i>
                         <span>Leonardo Dicaprio</span>
                     </div>
-                    <div class="header-box header-sm">
+                    <div class="header-box header-sm quit">
                         <i class="fas fa-sign-out-alt"></i>
                     </div>
                 </div>

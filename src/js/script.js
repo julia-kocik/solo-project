@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 {
   const navLinks = document.querySelectorAll('.links ul li a');
   const pages = document.querySelectorAll('.page');
@@ -81,7 +82,7 @@
       modal.classList.remove('show');
     });
     document.querySelector('#overlay').classList.add('show');
-    document.querySelector(modal).classList.add('show');
+    document.querySelector(modal).classList.add('modal-active');
   };
 
   const activateOpenModal = () => {
@@ -89,13 +90,17 @@
       e.preventDefault();
       openModal('#myModal');
     });
+    document.querySelector('.quit').addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal('#quit');
+    });
   };
 
   //chart
   var ctx = document.getElementById('myChart').getContext('2d');
   // eslint-disable-next-line no-undef
+ 
   // eslint-disable-next-line no-unused-vars
-  // eslint-disable-next-line no-undef
   var chart = new Chart(ctx, {
     // 1
     type: 'bar',
