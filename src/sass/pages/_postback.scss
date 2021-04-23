@@ -42,6 +42,11 @@
     .postback-form {
         flex-direction: column;
     }
+    .postback-form-box {
+        textarea {
+            margin: 10px 20px;
+        }
+    }
     .postback-form-rest {
         flex-direction: column;
         height: 300px;
