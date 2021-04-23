@@ -23,12 +23,14 @@
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
     .date {
         flex-direction: column;
+        align-items: center;
         input {
             margin-top: 8px;
         }
+        
     }
     
 }

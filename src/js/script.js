@@ -4,6 +4,7 @@
   const pages = document.querySelectorAll('.page');
   const hamburger = document.querySelector('.hamburger-btn a');
   const sidebarContent = document.querySelector('.sidebar');
+  const content = document.querySelectorAll('.page-container');
 
   const initPages = () => {
     const idFromHash = window.location.hash.replace('#', '');
@@ -45,6 +46,11 @@
     hamburger.addEventListener('click', () => {
       sidebarContent.classList.toggle('sidebar-active');
     });
+    for(let elem of content) {
+      elem.addEventListener('click', () => {
+        sidebarContent.classList.remove('sidebar-active');
+      });
+    }
   };
 
   //modals
@@ -80,8 +86,6 @@
       }
     });
   };
-
-  console.log(document.querySelectorAll('.overlay .js--close-modal'));
   
   const openModal = (modal) => {
     document.querySelectorAll('#overlay > *').forEach(function(modal) {
@@ -98,6 +102,7 @@
   const activateOpenModal = () => {
     document.querySelector('.manager .name').addEventListener('click', (e) => {
       e.preventDefault();
+      sidebarContent.classList.remove('sidebar-active');
       openModal('#myModal');
     });
     document.querySelector('.quit').addEventListener('click', (e) => {

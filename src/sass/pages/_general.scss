@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     border-top: 1px solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-light;
     padding: 20px 0;
 }
 
@@ -55,6 +56,11 @@
 
 @media (max-width: 767px) {
     .info {
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
     }   
+    .chart-image {
+        max-width: 300px;
+        
+    }
 }
