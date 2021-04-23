@@ -25,3 +25,19 @@
 .link-active {
     color: $color-white !important;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .page-container {
+        border: 1px solid black;
+        max-width: 767px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .page-container {
+        border: 1px solid black;   
+        max-width: 767px;
+    }
+}
